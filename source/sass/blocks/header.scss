@@ -1,0 +1,26 @@
+.header {
+  padding-top: 35px;
+}
+
+.header__image::before {
+  background: url("../img/intro@1x-desktop.jpg") no-repeat top center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+
+  @include set-img-size(100%, 650px);
+  @include pseudo();
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    padding-top: 20px;
+  }
+
+  .header__image::before {
+    background: url("../img/intro@1x-tablet.jpg") no-repeat top center;
+
+    @include set-img-size(100%, 638px);
+  }
+}

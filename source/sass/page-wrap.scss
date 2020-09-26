@@ -1,0 +1,19 @@
+.page-wrap {
+  max-width: $desktop-max-width;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+  .page-wrap {
+    max-width: $tablet-max-width;
+    padding: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-wrap {
+    max-width: auto;
+    padding: 0 15px;
+  }
+}

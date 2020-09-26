@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
+  background-color: $bg-white;
+  color: $font-color-black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@mixin set-font-size($font-weight: 400, $font-size: 16px, $line-height: 24px) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin list-style-none() {
+  list-style: none;
+}
+
+@mixin reset-to-zero() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin pseudo($display: block, $position: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $position;
+}
+
+@mixin set-img-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin animation($transition-timing-function: ease-in-out, $transition-duration: 0.3s) {
+  transition-timing-function: $transition-timing-function;
+  transition-duration: $transition-duration;
+}
