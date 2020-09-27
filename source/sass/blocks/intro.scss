@@ -1,0 +1,60 @@
+.intro {
+  padding-top: 187px;
+}
+
+.intro__wrap {
+  padding: 0 95px;
+}
+
+.intro__title,
+.intro__text {
+  color: $font-color-white;
+
+  @include reset-to-zero();
+}
+
+.intro__title {
+  margin-bottom: 10px;
+
+  @include set-font-size(700, 54px, 66px);
+}
+
+.intro__text {
+  @include set-font-size(400, 20px, 24px);
+}
+
+@media (max-width: $tablet-width) {
+  .intro {
+    padding-top: 205px;
+  }
+
+  .intro__wrap {
+    padding: 0;
+  }
+
+  .intro__title {
+    margin-bottom: 15px;
+
+    @include set-font-size(700, 50px, 61px);
+  }
+
+  .intro__text {
+    @include set-font-size(400, 18px, 22px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .intro {
+    padding-top: 130px;
+  }
+
+  .intro__title {
+    @include set-font-size(700, 36px, 45px);
+  }
+
+  .intro__text {
+    width: 230px;
+
+    @include set-font-size(400, 16px, 22px);
+  }
+}

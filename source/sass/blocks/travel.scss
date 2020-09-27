@@ -1,0 +1,95 @@
+.travel {
+  background-color: $font-color-white;
+  padding: 120px 0;
+}
+
+.travel__img {
+  @include set-img-size(560px, 301px);
+}
+
+.travel__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travel__desc {
+  width: 47%;
+  padding-right: 20px;
+}
+
+.travel__photo {
+  width: 560px;
+}
+
+.travel__title,
+.travel__text {
+  @include reset-to-zero();
+}
+
+.travel__title {
+  margin-bottom: 25px;
+
+  @include set-font-size(600, 28px, 42px);
+}
+
+.travel__text {
+  @include set-font-size(400, 16px, 24px);
+}
+
+@media (max-width: $tablet-width) {
+  .travel {
+    padding: 100px 0;
+  }
+
+  .travel__title {
+    margin-bottom: 18px;
+
+    @include set-font-size(600, 26px, 36px);
+  }
+
+  .travel__img {
+    @include set-img-size(324px, 264px);
+  }
+
+  .travel__photo {
+    width: 324px;
+  }
+
+  .travel__br {
+    display: block;
+  }
+
+  .travel__desc {
+    width: 50%;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .travel__block {
+    flex-direction: column;
+  }
+
+  .travel {
+    padding: 65px 0;
+  }
+
+  .travel__desc {
+    width: auto;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .travel__title {
+    @include set-font-size(600, 24px, 34px);
+  }
+
+  .travel__img {
+    @include set-img-size(290px, 186px);
+  }
+
+  .travel__photo {
+    width: 290px;
+  }
+}
