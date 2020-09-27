@@ -58,9 +58,9 @@ img {
 }
 
 @mixin pseudo($display: block, $position: absolute, $content: "") {
-  content: $content;
   display: $display;
   position: $position;
+  content: $content;
 }
 
 @mixin set-img-size($width, $height) {

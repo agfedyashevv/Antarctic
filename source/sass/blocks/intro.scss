@@ -1,5 +1,6 @@
 .intro {
-  padding-top: 187px;
+  padding-top: 193px;
+  margin-bottom: 283px;
 }
 
 .intro__wrap {
@@ -14,7 +15,7 @@
 }
 
 .intro__title {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   @include set-font-size(700, 54px, 66px);
 }
@@ -26,6 +27,7 @@
 @media (max-width: $tablet-width) {
   .intro {
     padding-top: 205px;
+    margin-bottom: 280px;
   }
 
   .intro__wrap {
@@ -46,6 +48,7 @@
 @media (max-width: $mobile-width) {
   .intro {
     padding-top: 130px;
+    margin-bottom: 250px;
   }
 
   .intro__title {
