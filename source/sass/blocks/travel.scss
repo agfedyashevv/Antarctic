@@ -37,7 +37,7 @@
   @include set-font-size(400, 16px, 24px);
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width-max) {
   .travel {
     padding: 100px 0;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile-width-max) {
   .travel__block {
     flex-direction: column;
   }

@@ -15,7 +15,7 @@
   @include pseudo();
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width-max) {
   .header {
     padding-top: 20px;
   }

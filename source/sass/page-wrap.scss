@@ -4,14 +4,13 @@
   margin: 0 auto;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-min-width) {
   .page-wrap {
-    max-width: $tablet-max-width;
     padding: 0;
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile-width-max) {
   .page-wrap {
     max-width: auto;
     padding: 0 15px;

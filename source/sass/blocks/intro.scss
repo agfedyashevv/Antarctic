@@ -24,7 +24,7 @@
   @include set-font-size(400, 20px, 24px);
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width-max) {
   .intro {
     padding-top: 205px;
     margin-bottom: 280px;
@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile-width-max) {
   .intro {
     padding-top: 130px;
     margin-bottom: 250px;

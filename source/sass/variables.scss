@@ -8,6 +8,9 @@ $font-color-black: #011c40;
 $font-color-white: #f9fbfd;
 
 $desktop-max-width: 1240px;
-$tablet-max-width: 678px;
-$tablet-width: 1023px;
-$mobile-width: 767px;
+$tablet-min-width: 768px;
+$tablet-width-max: 1023px;
+$mobile-width-max: 767px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

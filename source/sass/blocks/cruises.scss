@@ -1,0 +1,32 @@
+.cruises {
+  padding: 87px 0 103px;
+}
+
+.cruises__title {
+  text-align: center;
+  margin-bottom: 35px;
+
+  @include set-font-size(600, 28px, 42px);
+}
+
+@media (max-width: $tablet-width-max) {
+  .cruises {
+    padding: 67px 0 850px;
+  }
+
+  .cruises__title {
+    @include set-font-size(600, 26px, 39px);
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .cruises {
+    padding: 37px 0 50px;
+  }
+
+  .cruises__title {
+    margin-bottom: 15px;
+
+    @include set-font-size(600, 24px, 36px);
+  }
+}

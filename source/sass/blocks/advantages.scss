@@ -83,7 +83,7 @@
   @include set-font-size(400, 14px, 20px);
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width-max) {
   .advantages {
     padding-top: 40px;
     min-height: 588px;
@@ -131,7 +131,7 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile-width-max) {
   .advantages {
     padding-top: 56px;
     min-height: 997px;
