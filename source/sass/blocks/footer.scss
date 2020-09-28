@@ -28,14 +28,22 @@
 
   &:hover,
   &:focus {
-    opacity: 0.7;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .footer__icon {
   &:hover,
   &:focus {
-    opacity: 0.7;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
