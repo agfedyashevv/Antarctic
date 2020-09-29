@@ -52,6 +52,15 @@
 .card__reserve {
   text-align: center;
   background-color: $bg-white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.90;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
 }
 
 .card__block {
@@ -73,6 +82,7 @@
 .card__button {
   display: block;
   padding: 9px 0;
+  color: $font-color-black;
 
   @include set-font-size(600, 14px, 21px);
 }

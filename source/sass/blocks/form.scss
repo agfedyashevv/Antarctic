@@ -1,0 +1,70 @@
+.form {
+  color: $font-color-white;
+  background-color: $bg-navy-blue;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 45px 47px;
+}
+
+.form__field {
+  margin-bottom: 20px;
+}
+
+.form__text {
+  margin: 0 0 26px;
+
+  @include set-font-size(500, 18px, 27px);
+}
+
+.form__input {
+  position: relative;
+  width: 100%;
+  padding: 14px 16px 11px;
+  background-color: $bg-white;
+  border: none;
+
+  &:invalid {
+    box-shadow: inset 0px 0px 0px 2px $bg-white;
+    background-color: rgb(255, 113, 113);
+  }
+}
+
+.form__input--email {
+  margin-bottom: 3px;
+}
+
+.form__checkbox-label {
+  position: relative;
+  padding-left: 24px;
+
+  &::before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: $bg-white;
+
+
+    @include set-img-size(18px, 18px);
+    @include pseudo();
+  }
+
+  @include set-font-size(400, 10px, 13px);
+}
+
+.form__checkbox-block {
+  display: flex;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.form__checkbox-input {
+  margin-right: 5px;
+}
+
+.form__input::placeholder {
+  color: $bg-navy-blue;
+
+  @include set-font-size(400, 14px, 21px);
+}

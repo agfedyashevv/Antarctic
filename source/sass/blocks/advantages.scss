@@ -1,18 +1,18 @@
 .advantages {
   position: relative;
   padding-top: 110px;
-  min-height: 562px;
+  padding-bottom: 120px;
 }
 
 .advantages__background::before {
   background: url("../img/3_screen@1x-desktop.jpg") no-repeat center center;
   background-size: cover;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: -1;
 
-  @include set-img-size(100%, 562px);
   @include pseudo();
 }
 
@@ -85,14 +85,12 @@
 
 @media (max-width: $tablet-width-max) {
   .advantages {
-    padding-top: 40px;
-    min-height: 588px;
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 
   .advantages__background::before {
     background: url("../img/3_screen@1x-tablet.jpg") no-repeat center center;
-
-    @include set-img-size(100%, 588px);
   }
 
   .advantages__title {
@@ -134,7 +132,7 @@
 @media (max-width: $mobile-width-max) {
   .advantages {
     padding-top: 56px;
-    min-height: 997px;
+    padding-bottom: 35px;
   }
 
   .advantages__heading {
@@ -160,7 +158,5 @@
   .advantages__background::before {
     background: url("../img/3_screen@1x-mobile.jpg") no-repeat center center;
     background-size: cover;
-
-    @include set-img-size(100%, 997px);
   }
 }

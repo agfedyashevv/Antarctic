@@ -1,0 +1,47 @@
+.reserve {
+  position: relative;
+  padding: 50px 0;
+
+  &::before {
+    background: $bg-light-blue url("../img/iceberg@1x-desktop.jpg") no-repeat center center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @include pseudo();
+  }
+}
+
+.reserve__title {
+  margin: 0 0 8px;
+
+  @include set-font-size(700, 40px, 60px);
+}
+
+.reserve__text {
+  margin: 0;
+
+  @include set-font-size(400, 18px, 27px);
+}
+
+.reserve__form {
+  width: 403px;
+}
+
+.reserve__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.reserve__box {
+  padding-right: 35px;
+}
+
+.reserve__text {
+  width: 380px;
+}
