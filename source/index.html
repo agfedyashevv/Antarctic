@@ -103,7 +103,7 @@
               <li class="advantages__item">
                 <h3 class="advantages__heading advantages__heading--boat">Экскурсионные туры&nbsp;на&nbsp;Zodiac</h3>
                 <p class="advantages__text">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются
-                  на&nbsp;оборудованных лодках типа&nbsp;Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+                  на оборудованных лодках типа&nbsp;Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
               </li>
             </ul>
           </div>
@@ -335,7 +335,7 @@
                         srcset="img/aurora@1x-tablet.jpg 1x, img/aurora@2x-tablet.jpg 2x">
                       <!-- 1х: 270px; 2x: 540px -->
                       <img src="img/aurora@1x-mobile.jpg" srcset="img/aurora@2x-mobile.jpg 2x"
-                        alt="Отдаленный вид сверху на океан и белые скалы">
+                        alt="Отдаленный вид сверху людей, спускающихся по снегу к океану">
                     </picture>
                   </div>
                   <div class="card__block">
@@ -446,11 +446,11 @@
             <div class="reserve__inner">
               <div class="reserve__box">
                 <h2 class="reserve__title">Раннее бронирование</h2>
-                <p class="reserve__text">Забронируйте тур за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+                <p class="reserve__text">Забронируйте тур <br class="reserve__br"> за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
               </div>
               <form class="reserve__form form" method="post" action="https://echo.htmlacademy.ru">
                 <fieldset class="form__fieldset">
-                  <p class="form__text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+                  <p class="form__text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
                   <div class="form__field">
                     <label class="visually-hidden" name="user-name" for="name">Имя</label>
                     <input type="text" id="name" class="form__input form__input--name" placeholder="Валерия">
@@ -458,16 +458,16 @@
                   <div class="form__field">
                     <label class="visually-hidden" name="user-phone" for="phone">Номер телефона</label>
                     <input type="tel" id="phone" maxlength="11" class="form__input form__input--tel"
-                      placeholder="89236889975">
+                      placeholder="89236889975" pattern="[0-9]{11}">
                   </div>
-                  <div class="form__field">
+                  <div class="form__field form__field--last">
                     <label class="visually-hidden" name="user-email" for="email">E-mail</label>
                     <input type="email" id="email" class="form__input form__input--email"
                       placeholder="grishaewa.lera@gmail.com">
                   </div>
                   <div class="form__checkbox-block">
-                    <input class="form__checkbox-input visually-hidden" type="checkbox" id="agreement" name="personal_data">
-                    <label class="form__checkbox-label">Я согласен на обработку моих персональных данных</label>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" id="agreement" name="personal_data">
+                    <label class="form__checkbox-label" for="agreement">Я согласен на обработку моих персональных данных</label>
                   </div>
                   <button type="submit" class="button button--padding">Оставить заявку</button>
                 </fieldset>

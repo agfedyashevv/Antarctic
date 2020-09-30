@@ -37,14 +37,13 @@
 
 .form__checkbox-label {
   position: relative;
-  padding-left: 24px;
+  padding: 2px 0 2px 24px;
 
   &::before {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     background-color: $bg-white;
-
 
     @include set-img-size(18px, 18px);
     @include pseudo();
@@ -55,16 +54,64 @@
 
 .form__checkbox-block {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   align-items: center;
 }
 
 .form__checkbox-input {
-  margin-right: 5px;
+  position: relative;
+
+  &:checked + .form__checkbox-label::after {
+    top: 3px;
+    left: 4px;
+    background-color: transparent;
+    width: 10px;
+    border-bottom: 1px solid $font-color-black;
+    height: 6px;
+    border-left: 1px solid $font-color-black;
+    transform: rotate(-45deg);
+
+    @include pseudo();
+  }
+
+  &:focus + .form__checkbox-label::before {
+    outline: $bg-navy-blue auto 5px;
+  }
 }
 
 .form__input::placeholder {
   color: $bg-navy-blue;
 
   @include set-font-size(400, 14px, 21px);
+}
+
+.form__field--last {
+  margin-bottom: 18px;
+}
+
+@media (max-width: $mobile-width-max) {
+  .form__fieldset {
+    border: none;
+    padding: 35px 29px;
+  }
+
+  .form__text {
+    margin: 0 0 26px;
+    text-align: center;
+
+    @include set-font-size(500, 18px, 25px);
+  }
+
+  .form__field--last {
+    margin-bottom: 15px;
+  }
+
+  .form__checkbox-block {
+    width: 180px;
+    margin-bottom: 23px;
+  }
+
+  .form__checkbox-label {
+    padding: 2px 0 2px 29px;
+  }
 }

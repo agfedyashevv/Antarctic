@@ -1,6 +1,6 @@
 .travel {
   background-color: $font-color-white;
-  padding: 114px 0;
+  padding: 112px 0 120px;
 }
 
 .travel__img {
@@ -11,6 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  line-height: 0;
 }
 
 .travel__desc {
@@ -39,7 +41,11 @@
 
 @media (max-width: $tablet-width-max) {
   .travel {
-    padding: 100px 0;
+    padding: 80px 0 92px;
+  }
+
+  .travel__block {
+    padding: 0 5px;
   }
 
   .travel__title {
@@ -63,18 +69,19 @@
 }
 
 @media (max-width: $mobile-width-max) {
-  .travel__block {
-    flex-direction: column;
+  .travel {
+    padding: 55px 0 65px;
   }
 
-  .travel {
-    padding: 65px 0;
+  .travel__block {
+    flex-direction: column;
+    padding: 0;
   }
 
   .travel__desc {
     width: auto;
     padding-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .travel__title {

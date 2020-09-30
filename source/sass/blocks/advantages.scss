@@ -5,7 +5,7 @@
 }
 
 .advantages__background::before {
-  background: url("../img/3_screen@1x-desktop.jpg") no-repeat center center;
+  background: url("../img/3_screen@desktop.jpg") no-repeat center center;
   background-size: cover;
   top: 0;
   left: 0;
@@ -85,12 +85,11 @@
 
 @media (max-width: $tablet-width-max) {
   .advantages {
-    padding-top: 90px;
-    padding-bottom: 100px;
+    padding: 90px 5px 100px;
   }
 
   .advantages__background::before {
-    background: url("../img/3_screen@1x-tablet.jpg") no-repeat center center;
+    background: url("../img/3_screen@tablet.jpg") no-repeat center center;
   }
 
   .advantages__title {
@@ -131,8 +130,7 @@
 
 @media (max-width: $mobile-width-max) {
   .advantages {
-    padding-top: 56px;
-    padding-bottom: 35px;
+    padding: 56px 0 35px;
   }
 
   .advantages__heading {
@@ -156,7 +154,7 @@
   }
 
   .advantages__background::before {
-    background: url("../img/3_screen@1x-mobile.jpg") no-repeat center center;
+    background: url("../img/3_screen@mobile.jpg") no-repeat center center;
     background-size: cover;
   }
 }

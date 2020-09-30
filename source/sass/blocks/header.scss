@@ -4,7 +4,7 @@
 }
 
 .header__image::before {
-  background: url("../img/intro@1x-desktop.jpg") no-repeat center center;
+  background: url("../img/intro@desktop.jpg") no-repeat center center;
   background-size: cover;
   top: 0;
   left: 50%;
@@ -21,7 +21,7 @@
   }
 
   .header__image::before {
-    background: url("../img/intro@1x-tablet.jpg") no-repeat center center;
+    background: url("../img/intro@tablet.jpg") no-repeat center center;
     background-size: cover;
 
     @include set-img-size(100%, 638px);
