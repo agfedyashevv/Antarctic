@@ -400,35 +400,64 @@
             <div class="reserve__inner">
               <div class="reserve__box">
                 <h2 class="reserve__title">Раннее бронирование</h2>
-                <p class="reserve__text">Забронируйте тур <br class="reserve__br"> за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+                <p class="reserve__text">Забронируйте тур <br class="reserve__br"> за&nbsp;3-6&nbsp;месяцев до&nbsp;даты
+                  выезда и&nbsp;сэкономьте до&nbsp;50%</p>
               </div>
               <form class="reserve__form form" method="post" action="https://echo.htmlacademy.ru">
                 <fieldset class="form__fieldset">
                   <p class="form__text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
                   <div class="form__field">
-                    <label class="visually-hidden" name="user-name" for="name">Имя</label>
+                    <label for="name" aria-label="Впишите свое имя"></label>
                     <input type="text" id="name" class="form__input form__input--name" placeholder="Валерия">
                   </div>
                   <div class="form__field">
-                    <label class="visually-hidden" name="user-phone" for="phone">Номер телефона</label>
+                    <label for="phone" aria-label="Впишите свой номер телефона"></label>
                     <input type="tel" id="phone" maxlength="11" class="form__input form__input--tel" placeholder="89236889975" pattern="[0-9]{11}">
                   </div>
                   <div class="form__field form__field--last">
-                    <label class="visually-hidden" name="user-email" for="email">E-mail</label>
+                    <label for="email" aria-label="Впишите свой email"></label>
                     <input type="email" id="email" class="form__input form__input--email" placeholder="grishaewa.lera@gmail.com">
                   </div>
                   <div class="form__checkbox-block">
                     <input class="visually-hidden form__checkbox-input" type="checkbox" id="agreement" name="personal_data">
-                    <label class="form__checkbox-label" for="agreement">Я согласен на обработку моих персональных данных</label>
+                    <label class="form__checkbox-label" for="agreement">Я согласен на обработку моих персональных
+                      данных</label>
                   </div>
                   <button type="submit" class="button button--padding">Оставить заявку</button>
                 </fieldset>
               </form>
-          </div>
+            </div>
         </div></section>
 
-        <section>
-          Контакты
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="page-wrap">
+            <div class="contacts__block">
+              <div class="contacts__map">
+                <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056793!2d30.320853351773355!3d59.93871916896509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1601574784762!5m2!1sru!2sru" width="560" height="306" style="border:0;" allowfullscreen="">
+                </iframe>
+
+                <div class="contacts__underlay">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="img/map@1x-desktop.webp 1x, img/map@2x-desktop.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/map@1x-tablet.webp 1x, img/map@2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/map@1x-mobile.webp 1x, img/map@2x-mobile.webp 2x">
+
+                    <source media="(min-width: 1024px)" srcset="img/map@1x-desktop.jpg 1x, img/map@2x-desktop.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/map@1x-tablet.jpg 1x, img/map@2x-tablet.jpg 2x">
+                    <img class="contacts__img" src="img/map@1x-mobile.jpg" width="560" height="306" srcset="img/map@2x-mobile.jpg 2x" alt="Офис расположен в Санкт-Петербурге на Большой Конюшенной улице">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="contacts__info">
+                <p class="contacts__text">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы вам все
+                  расскажем.</p>
+                <p class="contacts__address">г.&nbsp;Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+                <p class="contacts__phone">8-800-200-00-00</p>
+              </div>
+            </div>
+          </div>
         </section>
 
       </main>
