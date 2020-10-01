@@ -32,7 +32,6 @@
     left: 0;
 
     @include set-img-size(18px, 22px);
-
     @include pseudo();
   }
 }
@@ -47,7 +46,6 @@
     left: 0;
 
     @include set-img-size(18px, 18px);
-
     @include pseudo();
   }
 }

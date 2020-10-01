@@ -26,7 +26,7 @@
   border: none;
 
   &:invalid {
-    box-shadow: inset 0px 0px 0px 2px $bg-white;
+    box-shadow: inset 0 0 0 2px $bg-white;
     background-color: rgb(255, 113, 113);
   }
 }
