@@ -13,7 +13,8 @@
   overflow: hidden;
   margin: 15px;
   width: 260px;
-  background-color: $bg-light-blue;
+  min-height: 386px;
+  background-color: $bg-navy-blue;
 
   &:hover .card__block {
     transform: translateY(0);
