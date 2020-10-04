@@ -107,19 +107,24 @@
     margin-bottom: 9px;
 
     &--ship::before {
-      top: -52px;
+      top: -49px;
+      left: -2px;
+      transform: scale(0.8);
 
       @include set-img-size(27px, 32px);
     }
 
     &--check::before {
-      top: -44px;
+      top: -43px;
+      left: -2px;
+      transform: scale(0.9);
 
       @include set-img-size(38px, 21px);
     }
 
     &--boat::before {
       top: -40px;
+      transform: scale(0.9);
 
       @include set-img-size(42px, 15px);
     }
@@ -135,6 +140,23 @@
 
   .advantages__heading {
     width: 150px;
+
+    &--ship::before {
+      top: -50px;
+      left: -2px;
+      transform: scale(0.8);
+    }
+
+    &--check::before {
+      left: -2px;
+      transform: scale(0.9);
+    }
+
+    &--boat::before {
+      top: -42px;
+      left: -2px;
+      transform: scale(0.9);
+    }
   }
 
   .advantages__title {
@@ -149,7 +171,7 @@
 
   .advantages__item {
     padding: 71px 22px 21px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     width: auto;
   }
 

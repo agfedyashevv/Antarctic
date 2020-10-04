@@ -24,6 +24,10 @@
 .nav__link {
   color: $font-color-white;
 
+  @include set-font-size(500, 16px, 20px);
+}
+
+.nav__link:not(.nav__link--active) {
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -32,8 +36,6 @@
   &:active {
     opacity: 0.6;
   }
-
-  @include set-font-size(500, 16px, 20px);
 }
 
 .nav__logo {
@@ -43,10 +45,14 @@
   @include set-img-size(70px, 38px);
 }
 
+.nav__pict {
+  @include set-img-size(70px, 38px);
+}
+
 @media (max-width: $tablet-width-max) {
   .nav__item {
     &:not(:last-child) {
-      margin-right: 23px;
+      margin-right: 24px;
     }
   }
 
@@ -55,6 +61,10 @@
   }
 
   .nav__logo {
+    @include set-img-size(38px, 20px);
+  }
+
+  .nav__pict {
     @include set-img-size(38px, 20px);
   }
 }
@@ -73,6 +83,8 @@
   }
 
   .nav__logo {
+    margin-top: 4px;
+
     @include set-img-size(42px, 22px);
   }
 
@@ -92,78 +104,6 @@
     margin-right: -5px;
   }
 
-  .nav--closed .nav__burger {
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $font-color-white;
-
-    @include set-img-size(70%, 2px);
-    @include animation();
-  }
-
-  .nav--closed .nav__burger::before,
-  .nav--closed .nav__burger::after {
-    top: 0;
-    left: 0;
-    background-color: $font-color-white;
-
-    @include pseudo();
-    @include set-img-size(100%, 2px);
-    @include animation();
-  }
-
-  .nav--closed .nav__burger::before {
-    transform: translate(0, -8px);
-  }
-
-  .nav--closed .nav__burger::after {
-    transform: translate(0, 8px);
-  }
-
-  .nav--opened .nav__burger {
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    background-color: transparent;
-    transform: translate(-50%, -50%);
-
-    @include set-img-size(70%, 2px);
-    @include animation();
-
-    &::before,
-    &::after {
-      background-color: $font-color-white;
-
-      @include pseudo();
-      @include set-img-size(24px, 2px);
-      @include animation();
-    }
-
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-  }
-
-  .nav--closed .nav__list {
-    display: none;
-  }
-
-  .nav--nojs .nav__toggle {
-    display: none;
-  }
-
-  .nav--nojs .nav__list {
-    display: block;
-  }
-
   .nav__list {
     flex-direction: column;
   }
@@ -174,6 +114,10 @@
     &:not(:last-child) {
       margin-right: 0;
     }
+  }
+
+  .nav__pict {
+    @include set-img-size(42px, 22px);
   }
 }
 

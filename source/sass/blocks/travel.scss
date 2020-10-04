@@ -1,6 +1,6 @@
 .travel {
   background-color: $font-color-white;
-  padding: 119px 0 120px;
+  padding-bottom: 120px;
 }
 
 .travel__img {
@@ -22,6 +22,7 @@
 
 .travel__photo {
   width: 560px;
+  background-color: $bg-light-blue;
 }
 
 .travel__title,

@@ -13,7 +13,6 @@
   overflow: hidden;
   margin: 15px;
   width: 260px;
-  min-height: 386px;
   background-color: $bg-light-blue;
 
   &:hover .card__block {
@@ -107,6 +106,7 @@
 @media (max-width: $mobile-width-max) {
   .card__item {
     width: 270px;
+    margin: 15px 10px;
   }
 
   .card__block {

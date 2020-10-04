@@ -1,6 +1,18 @@
 .intro {
-  padding-top: 190px;
-  padding-bottom: 278px;
+  padding-bottom: 70px;
+  min-height: 500px;
+}
+
+.intro__image::before {
+  background: $bg-dark-blue url("../img/intro@desktop.jpg") no-repeat bottom center;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+
+  @include set-img-size(100%, 650px);
+  @include pseudo();
 }
 
 .intro__wrap {
@@ -26,16 +38,23 @@
 
 @media (max-width: $tablet-width-max) {
   .intro {
-    padding-top: 205px;
-    margin-bottom: 280px;
+    min-height: 380px;
+  }
+
+  .intro__image::before {
+    background: $bg-dark-blue url("../img/intro@tablet.jpg") no-repeat bottom center;
+    background-size: cover;
+
+    @include set-img-size(100%, 638px);
   }
 
   .intro__wrap {
-    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .intro__title {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 
     @include set-font-size(700, 50px, 61px);
   }
@@ -47,11 +66,36 @@
 
 @media (max-width: $mobile-width-max) {
   .intro {
-    padding-top: 130px;
-    margin-bottom: 250px;
+    min-height: 325px;
+  }
+
+  .main--closed .intro {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .main--opened .intro,
+  .main--nojs .intro {
+    position: relative;
+    min-height: 500px;
+    padding-top: 175px;
+  }
+
+  .intro__wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .intro__image::before {
+    background: $bg-dark-blue url("../img/intro@tablet.jpg") no-repeat bottom center;
+    background-size: cover;
+
+    @include set-img-size(100%, 568px);
   }
 
   .intro__title {
+    margin-bottom: 12px;
+
     @include set-font-size(700, 36px, 45px);
   }
 

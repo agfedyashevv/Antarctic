@@ -89,6 +89,16 @@
   margin-bottom: 18px;
 }
 
+@media (max-width: $tablet-width-max) {
+  .form__fieldset {
+    padding: 45px 48px 48px;
+  }
+
+  .form__checkbox-block {
+    margin-bottom: 28px;
+  }
+}
+
 @media (max-width: $mobile-width-max) {
   .form__fieldset {
     border: none;
