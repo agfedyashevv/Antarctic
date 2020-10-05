@@ -20,7 +20,7 @@
 .advantages__list,
 .advantages__item,
 .advantages__heading,
-.advantages__text {
+.advantages__item p {
   @include reset-to-zero();
 }
 
@@ -79,7 +79,7 @@
   @include set-font-size(500, 18px, 27px);
 }
 
-.advantages__text {
+.advantages__item p {
   @include set-font-size(400, 14px, 20px);
 }
 

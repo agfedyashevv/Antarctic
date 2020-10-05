@@ -26,7 +26,7 @@
 }
 
 .travel__title,
-.travel__text {
+.travel__desc p {
   @include reset-to-zero();
 }
 
@@ -36,7 +36,7 @@
   @include set-font-size(600, 28px, 42px);
 }
 
-.travel__text {
+.travel__desc p {
   @include set-font-size(400, 16px, 24px);
 }
 

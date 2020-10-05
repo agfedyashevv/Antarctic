@@ -14,11 +14,12 @@
 
 .form__text {
   margin: 0 0 26px;
+  transform: translateY(45px);
 
   @include set-font-size(500, 18px, 27px);
 }
 
-.form__input {
+.form__field input {
   position: relative;
   width: 100%;
   padding: 14px 16px 11px;
@@ -29,10 +30,6 @@
     box-shadow: inset 0 0 0 2px $bg-white;
     background-color: rgb(255, 113, 113);
   }
-}
-
-.form__input--email {
-  margin-bottom: 3px;
 }
 
 .form__checkbox-label {
@@ -58,8 +55,13 @@
   align-items: center;
 }
 
-.form__checkbox-input {
+.form__checkbox-block input {
   position: relative;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
 
   &:checked + .form__checkbox-label::after {
     top: 3px;
@@ -79,16 +81,15 @@
   }
 }
 
-.form__input::placeholder {
+.form__field input::placeholder {
   color: $bg-navy-blue;
 
   @include set-font-size(400, 14px, 21px);
 }
 
 .form__field--last {
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 }
-
 @media (max-width: $tablet-width-max) {
   .form__fieldset {
     padding: 45px 48px 48px;
@@ -106,14 +107,14 @@
   }
 
   .form__text {
-    margin: 0 0 26px;
+    transform: translateY(35px);
     text-align: center;
 
     @include set-font-size(500, 18px, 25px);
   }
 
   .form__field--last {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   .form__checkbox-block {
@@ -123,5 +124,11 @@
 
   .form__checkbox-label {
     padding: 2px 0 2px 29px;
+  }
+
+  .form__checkbox-block input {
+    &:checked + .form__checkbox-label::after {
+      top: 10px;
+    }
   }
 }
