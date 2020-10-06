@@ -8,6 +8,18 @@
   @include list-style-none();
 }
 
+.card__box {
+  @include set-font-size(400, 14px, 20px);
+  @include reset-to-zero();
+  @include list-style-none();
+}
+
+.card__box-item {
+  margin-bottom: 10px;
+
+  @include set-font-size(400, 14px, 20px);
+}
+
 .card__item {
   position: relative;
   overflow: hidden;
@@ -22,13 +34,12 @@
   }
 
   &:hover .card__title {
-    margin-bottom: 12px;
+    margin-bottom: 0;
   }
 }
 
 .card__title,
-.card__heading,
-.card__paragraph {
+.card__heading {
   @include reset-to-zero();
 }
 
@@ -42,12 +53,6 @@
   margin-bottom: 2px;
 
   @include set-font-size(500, 14px, 20px);
-}
-
-.card__paragraph {
-  margin-bottom: 10px;
-
-  @include set-font-size(400, 14px, 20px);
 }
 
 .card__reserve {
