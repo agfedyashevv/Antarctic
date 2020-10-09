@@ -49,6 +49,11 @@
     @include set-img-size(18px, 18px);
     @include pseudo();
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 .contacts__address,
