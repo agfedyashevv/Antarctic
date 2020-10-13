@@ -24,10 +24,6 @@
 .nav__link {
   color: $font-color-white;
 
-  @include set-font-size(500, 16px, 20px);
-}
-
-.nav__link:not(.nav__link--active) {
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -36,6 +32,8 @@
   &:active {
     opacity: 0.6;
   }
+
+  @include set-font-size(500, 16px, 20px);
 }
 
 .nav__logo {
